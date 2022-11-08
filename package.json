@@ -19,6 +19,9 @@
   "homepage": "https://github.com/Thaissfv/teste-ebac-ui#readme",
   "devDependencies": {
     "cypress": "^10.11.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "faker": "^5.5.3"
   }
-
 }
