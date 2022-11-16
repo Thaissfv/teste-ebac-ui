@@ -5,7 +5,7 @@ var faker = require ('faker');
 describe('Funcionalidade trocar senha no primeiro acesso', () => {
     
     beforeEach(() => {
-        cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/)')
+        cy.visit('minha-conta')
     });
     
     it('Deve fazer pre cadastro e trocar a senha', () => {

@@ -5,7 +5,7 @@ var faker = require('faker');
 describe('Funcionalidade para lista de produtos', () => {
 
     beforeEach(() => {
-        cy.visit('http://lojaebac.ebaconline.art.br/produtos/)')
+        cy.visit('produtos')
     });
 
     it('Deve selecionar um produto da lista', () => {
@@ -17,7 +17,7 @@ describe('Funcionalidade para lista de produtos', () => {
             .click()
     });
 
-    it.only('Deve adicionar o produto ao carrinho', () => {
+    it('Deve adicionar o produto ao carrinho', () => {
         var quan = 10
         
         cy.get('[class="product-block grid"]')
@@ -31,6 +31,17 @@ describe('Funcionalidade para lista de produtos', () => {
 
 
     });
+
+    it('Deve adicionar produtos ao carrinho - Usando Comandos customizados', () => {
+        cy.addProdutos('Aero Daily Fitness Tee', 'M', 'Black', 3)
+        
+    });
+
+    it('Deve adicionar produtos ao carrinho - Usando Comandos customizados', () => {
+        cy.addProdutos('Atlas Fitness Tank', 'S', 'Blue', 5)
+        
+    });
+
 
 
 });

@@ -5,7 +5,7 @@ var faker = require ('faker');
 describe('Funcionalidade pré cadastro', () => {
     
     beforeEach(() => {
-        cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/)')
+        cy.visit('minha-conta')
     });
     
     it('Deve completar o pre cadastro com sucesso', () => {
@@ -25,4 +25,11 @@ describe('Funcionalidade pré cadastro', () => {
         cy.get('.woocommerce-Button').click()
         cy.get('.woocommerce-message').should('contain', 'Detalhes da conta modificados com sucesso.')
     })
+
+    it.only('Deve completar o precadastro usando comandos customizados', () => {
+        let nomeFaker2 = faker.name.firstName()
+        let emailFaker2 = faker.internet.email(nomeFaker2)
+        cy.preCadastro (emailFaker2, 'senha!@#forte', 'Thais', 'Furtado')
+        cy.get('.woocommerce-message').should('contain', 'Detalhes da conta modificados com sucesso.')
+    });
 });
