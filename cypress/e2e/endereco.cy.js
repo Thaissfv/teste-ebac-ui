@@ -11,7 +11,8 @@ describe('Funcionalidade Endereços - Faturamento e Entrega', () => {
     });
     
     it.only('Deve fazer cadastro de faturamento com sucesso', () => {
-        EnderecoPage.editarEnderecoFaturamento()
+        EnderecoPage.editarEnderecoFaturamento('Flavio', 'Aramba', 'Yahoo', 'Brasil', 'Av. Brasil', '2', 'Sobral', 'Paraná', '24987-908', '21444345643', 'ledamsf@eds.com')
+        cy.get('.woocommerce-message').should ('contain', 'Endereço alterado com sucesso.')
     });
 });
 
