@@ -1,0 +1,42 @@
+[
+    {
+        "nome": "Elena",
+        "sobrenome": "Gilbert",
+        "empresa": "TVD",
+        "endereco": "Mansão Salvatore",
+        "numero": "3456",
+        "pais": "Estados Unidos",
+        "cidade": "Mystic Falls",
+        "estado": "Virginia",
+        "cep": "25365-852",
+        "telefone": "21345677654",
+        "email": "thais@thais.com"
+    },
+    {
+        "nome": "Damon",
+        "sobrenome": "Salvatore",
+        "empresa": "TVD",
+        "endereco": "Mansão Salvatore",
+        "numero": "3456",
+        "pais": "Brasil",
+        "cidade": "Mystic Falls",
+        "estado": "Rio de Janeiro",
+        "cep": "25365-852",
+        "telefone": "21345677654",
+        "email": "thais@thais.com"
+    },
+    {        
+    "nome": "Stefan",
+    "sobrenome": "Salvatore",
+    "empresa": "TVD",
+    "endereco": "Mansão Salvatore",
+    "numero": "3456",
+    "pais": "Brasil",
+    "cidade": "Mystic Falls",
+    "estado": "Rio de Janeiro",
+    "cep": "25365-852",
+    "telefone": "21345677654",
+    "email": "thais@thais.com"
+
+    }
+]
